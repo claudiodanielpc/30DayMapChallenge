@@ -109,7 +109,7 @@ left_join(., enigh, by = c("region" = "cve_ent"))%>%
                          palette = "YlOrBr", direction = 1, limits=c(0,80),
                          labels = scales::comma_format(suffix = "%"))+
   labs(title = "Viviendas en condición de rezago habitacional por entidad federativa, 2020",
-       subtitle = "(Porcentaje respecto al total de viviendas particulares habitadas de cada entidad)",
+       subtitle = "(Porcentaje respecto del total de viviendas particulares habitadas de cada entidad)",
        fill = "Porcentaje de viviendas particulares habitadas en rezago (%)",
        caption = "Fuente: @claudiodanielpc con datos de INEGI. Encuesta Nacional de Ingresos y Gastos de los Hogares (ENIGH) 2020.") +
   theme_bw() +
